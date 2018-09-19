@@ -31,11 +31,14 @@ export default {
 <style scoped>
     .AboutUs{
         position: fixed;
-        left: 0;
+        left: 50%;
         top: 0;
+        width: 100%;
+        max-width: 640px;
         height: 100%;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;  
+        transform: translateX(-50%);
     }
     .pubHead{
         border-width: 1px;

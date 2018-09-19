@@ -36,11 +36,13 @@ export default {
 <style scoped>
 .switch{
     position:fixed;
-    left: 0;
+    left: 50%;
     top: 0;
     width: 100%;
+    max-width: 640px;
     min-height: 100%;
     background: #eee;
+    transform: translateX(-50%);
 }
 .pubHead{
     background: #fff;
@@ -52,7 +54,7 @@ export default {
 }
 .pg4 p{
     padding-left: .8rem;
-    line-height: .6rem;
+    line-height: .65rem;
     font-size: .28rem;
     color: #3F4D68;
     margin-bottom: .6rem;

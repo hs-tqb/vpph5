@@ -58,16 +58,16 @@
     methods: {
       changebeforekeyup() {
         this.changebefore = parseFloat(this.changebefore *1)
-        this.changeafter = Math.floor(this.changebefore * this.realtime[1].rate*1000)/1000
-        this.changeafter2 = Math.floor(this.changebefore * this.realtime[0].rate*1000)/1000
+        this.changeafter = Math.floor(this.changebefore * this.realtime[1].rate*10000)/10000
+        this.changeafter2 = Math.floor(this.changebefore * this.realtime[0].rate*10000)/10000
       },
       changeafterkeyup() {
         this.changeafter = parseFloat(this.changeafter *1)
-        this.changebefore = Math.floor(this.changeafter / this.realtime[1].rate*1000)/1000
+        this.changebefore = Math.floor(this.changeafter / this.realtime[1].rate*10000)/10000
       },
       changeafter2keyup() {
         this.changeafter2 = parseFloat(this.changeafter2 *1)
-        this.changebefore = Math.floor(this.changeafter2 / this.realtime[0].rate*1000)/1000
+        this.changebefore = Math.floor(this.changeafter2 / this.realtime[0].rate*10000)/10000
       },
       back() {
         this.$router.go(-1)
@@ -194,7 +194,7 @@
 .conversion p{
   position: relative;
   padding-left: .94rem;
-  line-height: .7rem;
+  line-height: .75rem;
   font-size: .28rem;
   color: #3F4D68;
 }

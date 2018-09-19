@@ -161,9 +161,11 @@ import Bscroll from 'better-scroll'
     position: absolute;
     background: #fff;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
+    max-width: 640px;
     height: 100%;
+    transform: translateX(-50%);
   }
   /* list */
   .nav-container {

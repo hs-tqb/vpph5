@@ -153,11 +153,11 @@ import orderList from './PartOrderList'
               formatter: function(val) {
                 val = val / 1000000
                 let valStr = val + ''
-                if(valStr.length >=8){
+                if(valStr.length >=7){
                   valStr = valStr.slice(0, 10)
                   return valStr
                 }else{
-                  return val.toFixed(2) + ''
+                  return (Math.floor(val * 100)/100).toFixed(2)
                 }
               },
               showMinLabel: false,

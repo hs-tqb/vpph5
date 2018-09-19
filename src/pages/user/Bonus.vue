@@ -168,12 +168,14 @@ export default {
 <style scoped>
 .bkeee{
     position: fixed;
-    left: 0;
+    left: 50%;
     top: 0;
     height: 100%;
     width: 100%;
+    max-width: 640px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;  
+    transform: translateX(-50%);
 }
 .pubHead{
     background: #fff;
