@@ -149,8 +149,10 @@ export default {
             this.$router.go(-1)
         },
         decimal(numojb) {
-            let num = new Number(numojb)
-            return Math.floor(num*100)/100
+            if(numojb){
+                let num = new Number(numojb)
+                return Math.floor(num*100)/100
+            }else return ' '
         }
         
     },

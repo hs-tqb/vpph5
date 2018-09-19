@@ -9,13 +9,13 @@
       <div class='inviteCode' id='target'>{{inviteData.inviteCode}}</div>
       <div class='copy' @click="copy" data-clipboard-action="copy" data-clipboard-target="#target">复制</div>
       <!-- <span><span>剩余邀请次数: {{inviteData.noUseInviteCode}}|</span><span>您的邀请码总次数: {{inviteData.inviteUp}}</span></span> -->
-      <div class='picCode'>
+      <!-- <div class='picCode'>
         <img :src="inviteData.qrCode" alt="qr">
         <div class='picCodetext'>
           <h3>微信扫码</h3>
           <p>即可直接下载<br />ValPromise App！</p>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class='inviteFoot pg4'>
       <p>平台内所有合约经营者每日总盈利的30%作为用户拉新佣金（未盈利的经营者不参与提取佣金），返还给为平台带来新用户的老用户，按照“新用户交易量/平台总交易量”给对应拉新老用户返佣，每日结算。</p>
@@ -89,7 +89,7 @@
 .inviteMain{
   position: relative;
   width: 6.2rem;
-  min-height: 6.15rem;
+  min-height: 3.5rem;
   margin: 1.52rem auto .6rem;
   padding-top: 1.2rem;
   background: #fff;
