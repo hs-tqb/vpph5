@@ -166,6 +166,15 @@ export default {
 </script>
 
 <style scoped>
+.bkeee{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;  
+}
 .pubHead{
     background: #fff;
     margin-bottom: .02rem;

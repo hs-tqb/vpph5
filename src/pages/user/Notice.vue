@@ -33,8 +33,10 @@ export default {
             this.$router.go(-1)
         },
         splicetime(time) {
-            let datatime = time.split(' ')
-            return datatime[0]
+            if(time){
+                let datatime = time.split(' ')
+                return datatime[0]
+            }else false
         }
     },
     created() {

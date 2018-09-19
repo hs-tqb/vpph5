@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="AboutUs">
         <header class="pubHead">
             <button @click="back" class="PubHeadBack"></button>
             关于我们
@@ -29,6 +29,14 @@ export default {
 </script>
 
 <style scoped>
+    .AboutUs{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;  
+    }
     .pubHead{
         border-width: 1px;
     }

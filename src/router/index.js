@@ -272,8 +272,7 @@ const router = new Router({
 })
 //路由跳转时鉴权
 router.beforeEach((to, from, next) => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = document.documentElement.scrollTop =0;
   if(to.matched.some(res => res.meta.requireLogin)) {
     if(localStorage.getItem('token')){
       next()
@@ -288,7 +287,5 @@ router.beforeEach((to, from, next) => {
     next()
   }
 })
-
-
 
 export default router;

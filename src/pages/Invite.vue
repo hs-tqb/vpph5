@@ -48,7 +48,7 @@
             Toast({
             message: '复制成功',
             position: 'middle',
-            duration: 5000
+            duration: 1200
           });     
           // 释放内存
           clipboard.destroy()
@@ -57,7 +57,7 @@
           Toast({
             message: '该浏览器不支持自动复制，请手动复制',
             position: 'middle',
-            duration: 5000
+            duration: 1200
           });
           clipboard.destroy()
         })

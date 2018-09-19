@@ -55,17 +55,6 @@
     components: {
       switchCurrency
     },
-    watch: {
-      changebefore() {
-        this.changebefore = (this.changebefore + '').replace(/\D/g,'')
-      },
-      changeafter() {
-        this.changeafter = (this.changeafter + '').replace(/\D/g,'')
-      },
-      changeafter() {
-        this.changeafter2 = (this.changeafter2 + '').replace(/\D/g,'')
-      }
-    },
     methods: {
       changebeforekeyup() {
         this.changebefore = parseFloat(this.changebefore *1)

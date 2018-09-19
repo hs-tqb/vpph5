@@ -761,9 +761,9 @@ import orderList from './PartOrderList'
           if(this.payPasswordExist != 1) {
             this.$router.push('/setPayPassword')
           }else{
-            if(!this.orderAmount){
+            if(!this.orderAmount || this.orderAmount*1 < this.product.minBet){
               Toast({
-                    message: '请输入下单金额',
+                    message: '下单金额不能小于' + this.product.minBet,
                     position: 'top',
                     duration: 3000
                   })

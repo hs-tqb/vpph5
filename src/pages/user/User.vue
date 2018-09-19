@@ -287,9 +287,10 @@
   background-size: auto 100%;
 }
 .logOff{
-  margin: .5rem auto .6rem;
+  margin: 1rem auto .6rem;
   background: #1BA5FD;
   color: #fff;
+  box-shadow: 0 2px 20px 0 rgba(12,138,231,0.34);
 }
 .mint-msgbox-message{
   line-height: 25px;
