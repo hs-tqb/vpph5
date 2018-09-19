@@ -34,12 +34,14 @@
 <style scoped>
 .menu{
   position:fixed;
-  left:0;
+  left:50%;
   top:0;
   z-index: 20001;
   width:100%;
+  max-width: 640px;
   height:100%;
   overflow: hidden;
+  transform: translateX(-50%);
 }
 .menu ul{
   float: left;
