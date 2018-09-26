@@ -885,7 +885,7 @@ import orderList from './PartOrderList'
         if(newVal > this.balance) {
           this.orderAmount = Math.floor(this.balance)
         }
-        this.orderAmount = (this.orderAmount + '').replace(/\D/g,'')
+        this.orderAmount = (this.orderAmount + '').replace(/\D/g,'') * 1
       }
     }
   }

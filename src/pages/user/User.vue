@@ -80,18 +80,16 @@
       },
 
       exit() {
-        MessageBox({
-          confirmButtonText:'退出登录',
-          showCancelButton:true})
-        MessageBox.confirm('退出后会不会删除任何历史数据，下次登录依然可以使用本账号。','确认退出登录？').then(action => {
-          this.$router.push({
-            path:'/login'
-          })
-          this.$axios.post('loginOut', {}).then(res => {
-            
-          })
-          this.$store.commit('setIncludedComponents','')
-          localStorage.clear()
+        MessageBox.confirm('退出后会不会删除任何历史数据，下次登录依然可以使用本账号。','确认退出登录？',{ confirmButtonText:'退出登录',
+          showCancelButton:true}).then(action => {
+            this.$router.push({
+              path:'/login'
+            })
+            this.$axios.post('loginOut', {}).then(res => {
+              
+            })
+            this.$store.commit('setIncludedComponents','')
+            localStorage.clear()
           },function(){
             // 取消
           });
@@ -294,6 +292,6 @@
   box-shadow: 0 2px 20px 0 rgba(12,138,231,0.34);
 }
 .mint-msgbox-message{
-  line-height: 25px;
+  line-height: 23px;
 }
 </style>

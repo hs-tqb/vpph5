@@ -44,17 +44,17 @@
                         <div class="tr">
                             <p>
                                 <span>持币收益</span>
-                                <em>{{decimal(this.todayResult.customerBalanceIncome)}}VPP</em>
+                                <em>{{decimal(this.todayResult.customerBalanceIncome)}}VPP <router-link to="/deposit">去存币</router-link></em>
                             </p>
                             <p>
                                 <span>邀请收益</span>
-                                <em>{{decimal(this.todayResult.customerInviteIncome)}}VPP</em>
+                                <em>{{decimal(this.todayResult.customerInviteIncome)}}VPP <router-link to="/invite">去邀请</router-link></em>
                             </p>
                         </div>
                         <div class="tr">
                             <p>
                                 <span>交易收益</span>
-                                <em>{{decimal(this.todayResult.customerTransactionIncome)}}VPP</em>
+                                <em>{{decimal(this.todayResult.customerTransactionIncome)}}VPP <router-link to="/transaction">去交易</router-link></em>
                             </p>
                             <p>
                                 <!-- <span>合约总盈利</span>
@@ -152,7 +152,7 @@ export default {
             if(numojb){
                 let num = new Number(numojb)
                 return Math.floor(num*100)/100
-            }else return ' '
+            }else return '请稍等'
         }
         
     },
@@ -241,6 +241,9 @@ export default {
     color: #3F4D68;
     line-height: .37rem;
     margin-top: .25rem;
+}
+.table .tr p em a{
+    float: right;
 }
 .table .tr p em{
     display: block;

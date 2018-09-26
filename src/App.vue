@@ -24,10 +24,10 @@ body,html {
 
 /*修改mint默认样式*/
 .mint-msgbox{
-  width: 5rem;
+  width: 5.5rem;
 }
 .mint-msgbox-btn{
-  border-width: 2px;
+  border-width: 1px;
 }
 .mint-swipe-indicator {
   width: .08rem;

@@ -270,6 +270,8 @@
       this.lastnum = Math.floor(Math.random()*9+1);
       console.log(this.lastnum)
       console.log(this.Secondnum(this.lastnum))
+      //判定有无邀请码
+      this.$route.query.inviteCode ? this.inviteWord = this.$route.query.inviteCode : ''
     }
   }
 </script>

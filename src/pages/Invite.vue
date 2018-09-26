@@ -5,8 +5,9 @@
       邀请有奖
     </header>
     <section class='inviteMain'>
-      <p>您的邀请码</p>
-      <div class='inviteCode' id='target'>{{inviteData.inviteCode}}</div>
+      <p>您的邀请链接</p>
+      <div class='inviteCode' id='target'>http://localhost:8080/signup?inviteCode={{inviteData.inviteCode}}</div>
+      <!-- {{inviteData.inviteCode}} -->
       <div class='copy' @click="copy" data-clipboard-action="copy" data-clipboard-target="#target">复制</div>
       <!-- <span><span>剩余邀请次数: {{inviteData.noUseInviteCode}}|</span><span>您的邀请码总次数: {{inviteData.inviteUp}}</span></span> -->
       <!-- <div class='picCode'>
@@ -121,14 +122,14 @@
   line-height: .3rem;
 }
 .inviteMain .inviteCode{
-  width: 2.78rem;
+  /* width: 2.78rem; */
   height: .91rem;
-  line-height: .91rem;
-  font-size:  .42rem;
+  /* line-height: .91rem; */
+  font-size:  .24rem;
   color: #000A2E;
   margin: .1rem auto .5rem;
-  border: 1px solid #626262;
-  border-radius: 4px;
+  /* border: 1px solid #626262; */
+  /* border-radius: 4px; */
 }
 .inviteMain .copy{
   width: 2.05rem;

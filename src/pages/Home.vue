@@ -14,7 +14,7 @@
     <div class="btn-group">
       <div class="toBj" @click="toTransaction">
         <img src="../assets/home-toBj.png" alt="" class="toBj-img">
-        <div class="toBj-text">快去猜币价行情</div>
+        <div class="toBj-text">快去交易币价期权</div>
       </div>
     </div>
     <div class="order-list">
@@ -155,6 +155,9 @@ header .menu{
   height: .88rem;
   line-height: .88rem;
   width: calc(100% - 1.5rem);
+  padding-left: .35rem;
+  background: url(../assets/inoticeIcon.png) no-repeat left center;
+  background-size: .24rem auto;
 }
 .notice-text a {
   font-size: .24rem;
@@ -198,7 +201,7 @@ header .menu{
   padding-left: .61rem;
   right: .4rem;
   bottom: .8rem;
-  height: .4rem;
+  height: .45rem;
   font-size: .28rem;
   text-align: right;
   color: #3F4D68;
